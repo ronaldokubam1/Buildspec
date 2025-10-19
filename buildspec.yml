@@ -16,9 +16,7 @@ phases:
       - aws --version
 
   build:
-    commands:
-      build:
-  commands:
+    commands: 
     - echo === RUNNING PYTHON APPLICATION ===
     - ls -la  # Check if the file exists
     - cat my_app.py  # Print contents (optional)
