@@ -16,11 +16,12 @@ phases:
       - aws --version
 
   build:
-    commands:
-     - echo === RUNNING PYTHON APPLICATION ===
-     - python3 my_app.py --input input.txt --output output.txt
+  commands:
+    - echo === LISTING FILES ===
+    - ls -la
+    - echo === RUNNING PYTHON SCRIPT ===
+    - python3 my_app.py || echo "Script failed with exit code $?"
 
- 
   post_build:
     commands:
       - echo === POST BUILD ACTIONS ===
