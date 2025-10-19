@@ -16,7 +16,7 @@ phases:
       - aws --version
 
   build:
-  commands:
+   commands:
     - echo === LISTING FILES ===
     - ls -la
     - echo === RUNNING PYTHON SCRIPT ===
