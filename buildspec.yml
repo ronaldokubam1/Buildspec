@@ -17,8 +17,13 @@ phases:
 
   build:
     commands:
-      - echo === RUNNING PYTHON APPLICATION ===
-      - python my_app.py
+      build:
+  commands:
+    - echo === RUNNING PYTHON APPLICATION ===
+    - ls -la  # Check if the file exists
+    - cat my_app.py  # Print contents (optional)
+    - python my_app.py
+
 
   post_build:
     commands:
