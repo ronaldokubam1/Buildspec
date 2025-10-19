@@ -16,13 +16,13 @@ phases:
       - aws --version
 
   build:
-    commands: 
-    - echo === RUNNING PYTHON APPLICATION ===
-    - ls -la  # Check if the file exists
-    - cat my_app.py  # Print contents (optional)
-    - python my_app.py
-
-
+    commands:
+      - echo === RUNNING PYTHON APPLICATION ===
+      - ls -la
+      - find . -name "my_app.py"
+      - if [ -f my_app.py ]; then cat my_app.py; else echo "my_app.py not found"; fi
+      - python my_app.py
+ 
   post_build:
     commands:
       - echo === POST BUILD ACTIONS ===
