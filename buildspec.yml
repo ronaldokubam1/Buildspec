@@ -6,6 +6,8 @@ phases:
       python: 3.9
     commands:
       - echo === INSTALLING PYTHON PACKAGES ===
+      - pip install --upgrade pip
+      - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
   pre_build:
     commands:
@@ -26,4 +28,3 @@ phases:
 artifacts:
   files:
     - my_app.py
-
