@@ -18,7 +18,8 @@ phases:
   build:
     commands:
      - echo === RUNNING PYTHON APPLICATION ===
-     - python3 my_app.py
+     - python3 my_app.py --input input.txt --output output.txt
+
  
   post_build:
     commands:
