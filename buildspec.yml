@@ -16,12 +16,12 @@ phases:
       - aws --version
 
   build:
-  commands:
-    - echo === LISTING FILES ===
-    - ls -R
-    - echo === RUNNING PYTHON SCRIPT ===
-    - cd src
-    - python3 my_app.py || echo "Script failed with exit code $?"
+    commands:
+     - echo === LISTING FILES ===
+     - ls -R
+     - echo === RUNNING PYTHON SCRIPT ===
+     - cd src
+     - python3 my_app.py || echo "Script failed with exit code $?"
 
   post_build:
     commands:
