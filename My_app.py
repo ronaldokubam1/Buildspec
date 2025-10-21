@@ -1,1 +1,1 @@
-print('Hello world from CodeBuild!!!')
+print('Hello world from codebuild')
