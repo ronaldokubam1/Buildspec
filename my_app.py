@@ -1,1 +1,1 @@
-- echo  > my_app.py
+print('Hello world from codebuild')
