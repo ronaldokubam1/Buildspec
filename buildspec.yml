@@ -15,13 +15,13 @@ phases:
       - python --version
       - aws --version
 
+  phases:
+ 
   build:
     commands:
-     - echo === LISTING FILES ===
-     - ls -R
-     - echo === RUNNING PYTHON SCRIPT ===
-     - cd src
-     - python3 my_app.py || echo "Script failed with exit code $?"
+      - echo 'print("Hello world from code build")' > my_app.py
+      - python3 my_app.py
+
 
   post_build:
     commands:
